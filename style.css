@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+body {
+  font-family: "Merienda", cursive;
+   background-image: url("backg.jpg");
+    background-size: cover;
+   background-repeat: no-repeat;
+  background-position: center; 
+  height: 100vh;
+  display: flex;
+  
+  align-items: center;
+  flex-direction: column;  /* veryically align*/
+}
+h1 {
+  margin-top: 20vh;
+  margin-bottom: 6vh;
+  
+}
+button{
+  border-radius: 1rem;
+  padding: 1.6vmin;
+  transition: all 0.3s linear;
+}
+.btn:hover{
+  background-color: green;
+  opacity: 60%;
+  padding: 1.7vmin;
+  border: 2px solid rgb(27, 99, 27);
+  font-size: 1rem;
+  color: white;
+  
+}
+#inputValue {
+  border-radius: 1rem;
+  border: 2px solid rgb(177, 155, 107);
+  padding: 10px;
+  margin-bottom: 15px;
+  min-width: 32rem; 
+  font-size: 18px; 
+  margin-right: 1.6rem;
+}
+#inputValue.input{
+  font-family: "Indie Flower", cursive;
+}
+
+.main_todo_div {
+  /* width: 36rem; */
+  display: grid;
+  grid-template-columns: 1fr 0.3fr;   /* to align delete btn side by side*/
+  align-items: center;
+  height: auto;
+  
+}
+
+.deleteBtn {
+    border-radius: 1rem;
+  padding: 0.5vmin;
+  width: 10vmin;
+  margin-bottom: 2vmin;
+}
+.deleteBtn:hover {
+  border: 3px solid rgb(157, 31, 31);
+  background-color: rgb(181, 33, 33);
+  opacity: 50%;
+}
